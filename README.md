@@ -53,6 +53,8 @@ If a variable isn’t defined in a function’s scope, closure allows a function
 
 1. Why do we need super() in an extended class?
 
+It gives the class the ability to pass new attributes back to the constructor of the parent object.
+
 ## Project Set up
 
 Follow these steps to set up and work on your project:
