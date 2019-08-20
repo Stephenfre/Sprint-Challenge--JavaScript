@@ -6,13 +6,18 @@ class CuboidMaker {
     this.width = properties.width;
     this.height = properties.height;
   }
-  volume = () => this.length * this.width * this.height;
+  volume() {
+    return this.length * this.width * this.height;
+  }
 
-  surfaceArea = () =>
-    2 *
-    (this.length * this.width +
-      this.length * this.height +
-      this.width * this.height);
+  surfaceArea() {
+    return (
+      2 *
+      (this.length * this.width +
+        this.length * this.height +
+        this.width * this.height)
+    );
+  }
 }
 
 const cuboid = new CuboidMaker({ length: 4, width: 5, height: 5 });
